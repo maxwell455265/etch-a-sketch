@@ -1,3 +1,6 @@
+
+
+
 const container = document.getElementById("container");
 
 function createGrid(size) {
@@ -12,8 +15,13 @@ function createGrid(size) {
     square.style.height = `${squareSize}px`;
 
     container.appendChild(square);
+
+    square.addEventListener("mouseover", () => {
+  square.style.backgroundColor = "black";
+});
   }
 }
 
 // default grid
 createGrid(16);
+
